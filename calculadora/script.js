@@ -21,10 +21,13 @@ const selectOperador = document.getElementById("operador");
 // Boton
 const btn = document.getElementById("btn");
 
+// Mensaje
+const mensaje = document.getElementById("mensaje");
+
 // OBTENER VALORES DE INICIO DE LOS INPUTS
 // VAMOS A UTILIZAR MATH
-const num1 = Math.ceil(Math.random() * 100); 
-const num2 = Math.ceil(Math.random() * 100);
+const num1 = Math.ceil(Math.random() * 10); 
+const num2 = Math.ceil(Math.random() * 10);
 // SETEAR VALORES DE INICIO DE LOS INPUTS
 inputNum1.value = num1;
 inputNum2.value = num2;
@@ -56,12 +59,29 @@ btn.addEventListener('click', function() {
     // El valor a evaluar, es el "operador"
     switch(operador) {
         case "+":
+            // Cada case, es una condicion
+            resultadoCorrecto = num1 + num2;
             break;
         case "-":
+            resultadoCorrecto = num1 - num2;
             break;
         case "*":
-            break;    
+            resultadoCorrecto = num1 * num2;
+            break;
+        case "/":
+            resultadoCorrecto = num1 / num2;
+            break;  
     }
+
+    // Si el resultado es correcto, y es igual a lo que metio el usuario
+    // = = Dos iguales -> Compara el valor, sin comparar el tipo
+    // = = = Tres iguales -> Compara el valor, y  el tipo (Numero, Texto -> String)
+    if (valorUsuario === resultadoCorrecto) {
+        mensaje.textContent = "Si sabes hacer operaciones. Felicidades.";
+    } else {
+        mensaje.textContent = "No sabes hacer operaciones. Sorry.";
+    }
+
 
     /**
        if (operador === "+") {}
