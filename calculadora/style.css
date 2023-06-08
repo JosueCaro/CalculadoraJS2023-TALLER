@@ -1,0 +1,108 @@
+body {
+    background-color: rgb(231, 249, 249);
+}
+
+
+/* Para poner estilos en clases
+se utiliza un punto (.) seguido del nombre 
+*/
+.container {
+    max-width: 500px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.equation {
+
+}
+
+
+input, select {
+ padding: 10px;
+ font-size: 24px;
+ border-radius: 10px;
+ width: 100px;
+ text-align: center;
+}
+
+select {
+    width: 60px;
+}
+
+
+
+span {
+    font-size: 30px;
+}
+
+
+
+
+
+button {
+    margin-top: 20px;
+    background-color: rgb(56, 41, 101);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 200ms linear;
+}
+button:hover {
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+}
+button:active {
+    background-color: rgb(48, 170, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.m1 {
+    background-color: red;
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+} 
+.m2 {
+
+    background-color: black;
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+}
+
+.hijo {
+    background-color: white;
+    width: 20px;
+    height: 20px;
+}

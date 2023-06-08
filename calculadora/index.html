@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+    <div class="container">
+        <h1>Realiza la operación</h1>
+        <div class="equation">
+            <input id="num1" type="number">
+            <select id="operador" >
+                <!-- Las opciones son los elementos que puede 
+                seleccionar el usuario, únicamente -->
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select> <!-- Select -->
+            <input id="num2" type="number">
+            <span>=</span>
+            <input id="total" type="number">
+        </div> <!-- Contenedor ecuacion -->
+        <button id="btn">Comprobar</button> 
+        <p id="mensaje">Aqui van los mensajes</p>
+    </div> <!-- Contenedor -->
+
+
+    <div class="c1">
+        <div class="c2"></div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html> 
